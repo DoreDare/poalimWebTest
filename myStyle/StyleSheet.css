@@ -207,6 +207,7 @@ footer {
 
 #trio {
     margin: 0 auto;
+    z-index: 500;
 }
 
 .section_trio {
@@ -289,7 +290,7 @@ section h2 {
 
 .trioP {
     font-size: 2.1vw;
-    font-family: poalimLight !important;
+    font-family: poalimReg !important;
     color: #464646;
 }
 
