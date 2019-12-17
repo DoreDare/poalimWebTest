@@ -1,0 +1,312 @@
+﻿@font-face {
+    src: url(../fonts/Poalim-Regular.woff);
+    font-family: poalimReg; /*שם של פונט פועלים רגיל*/
+}
+
+@font-face {
+    src: url(../fonts/._Poalim-Light.woff);
+    font-family: poalimLight; /*שם של פונט פועלים עדין*/
+}
+
+@font-face {
+    src: url(../fonts/._Poalim-Bold.woff);
+    font-family: poalimBold; /*שם של פונט פועלים בולד*/
+}
+
+/*------Media Queries-----------*/
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 576px) {
+}
+
+
+/*-------firefox bug fix-------*/
+.carousel-item {
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+}
+
+
+
+/*-----bootstrap padding fix----*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
+
+
+
+
+
+/*
+extra small (xs) devices (portrait phones, less than 576px)
+no media query since this is the default in bootstrap
+
+small (sm) devices (landscape phones , 576px and up)
+@media (min-width:576px) ( ... )
+
+large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) ( ... )
+
+extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) ( ... )
+*/
+
+
+
+
+/*----general elements----*/
+
+body {
+    font-family: poalimReg !important;
+    direction: rtl;
+}
+
+#container {
+    padding-right: 20px;
+}
+
+.hebrew {
+    text-align: right;
+}
+
+nav {
+    margin-top: 5px;
+}
+
+ul {
+    /* margin-right: 90px; */
+}
+
+#logo {
+    margin-left: 40px;
+}
+
+li a {
+    font-size: 2vw;
+}
+
+hr {
+    border-top: 2px solid #c00000 !important;
+    max-width: 9%;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+
+
+/*----home page----*/
+
+#job_course {
+    background-image: url(../pictures/brickLine.png);
+    padding: 130px 0 170px 0;
+    text-align: center;
+    background-position: center;
+    color: white;
+    background-repeat: no-repeat;
+    display: table;
+    width: 100%;
+}
+
+#greetCont {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    margin: 0 auto;
+}
+
+    #greetCont h1 {
+        font-size: 3vw;
+        font-weight: bold;
+        font-family: poalimReg;
+        margin-bottom: 15px;
+    }
+
+    #greetCont a {
+        font-size: 1.5vw;
+        display: block;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-style: solid;
+        border-color: white;
+        text-decoration: none;
+        color: white;
+        width: 10.3%;
+        margin-right: 45%;
+    }
+
+        #greetCont a:hover {
+            text-decoration: underline;
+        }
+
+    #greetCont .bold {
+        font-size: 2vw;
+        font-family: poalimReg;
+        font-weight: bold;
+    }
+
+    #greetCont .regular {
+        font-size: 1.5vw;
+    }
+
+#statisticH {
+    text-align: center;
+}
+
+
+#people_lightBuPic {
+    background-image: url(../pictures/people_lightBu.png);
+    text-align: center;
+    background-position: center;
+    color: white;
+    background-repeat: no-repeat;
+    display: table;
+    width: 60%;
+    margin: 0 auto;
+}
+
+#statisticPic {
+    margin: 0 auto;
+    padding-top: 3%
+}
+
+#statisticPicture {
+    margin: 0 auto;
+}
+
+#people_lightBuPic ul li {
+    list-style: none;
+    display: inline-block;
+    float: right;
+    color: white;
+    max-width: 31%;
+    padding-bottom: 30px;
+    font-size: 1.3vw;
+    padding-left: 9px;
+    right: 5%;
+}
+
+#trio {
+    margin: 0 auto;
+    z-index: 500;
+}
+
+.section_trio {
+    display: inline-block;
+    float: right;
+    background-color: #f5f5f5;
+    border: 2px solid #eaeaea;
+    margin-right: 2%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 0 !important;
+    margin-top: 15px;
+    right: 8.5%;
+}
+
+
+
+    .section_trio h3 {
+        height: 30px;
+        font-size: 1.8vw;
+        text-align: right;
+        color: #be0000;
+        font-family: poalimReg !important;
+        font-weight: bold;
+        margin-right: 1%;
+    }
+
+
+
+    .section_trio p {
+        font-size: 1.2vw;
+        text-align: right;
+        margin-top: 13%;
+        height: 45px;
+        margin-right: 1%;
+    }
+
+
+.readM {
+    font-size: 1.2vw;
+    padding-left: 2%;
+}
+
+#carPosition{
+margin: 0 auto;
+padding-top: 25%;
+}
+
+
+.carousel-indicators li {
+    background-color: #999;
+    background-color: rgba(70, 70, 70, 0.25);
+}
+
+.carousel-indicators .active {
+    background-color: #444;
+}
+
+/*-----manager page----*/
+#boardPic {
+    background-image: url(../pictures/manager/board.jpg);
+}
+
+.managerSec {
+    margin-bottom: -30px;
+}
+
+
+.manageP {
+    font-size: 2vw;
+    font-family: poalimLight;
+    color: #464646;
+}
+
+article h1 {
+    font-size: 3vw;
+    text-align: center;
+    direction: rtl;
+}
+
+section h2 {
+    font-size: 3vw;
+    margin-top: 15px;
+}
+
+
+
+/*----trio pages----*/
+
+.trioP {
+    font-size: 2.1vw;
+    font-family: poalimReg !important;
+    color: #464646;
+}
+
+.trioH {
+    font-size: 2.5vw;
+}
+
+.imgMargin {
+    margin-top: 30px;
+}
